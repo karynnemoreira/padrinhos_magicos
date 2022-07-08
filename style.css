@@ -5,8 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Macondo', cursive;
-font-family: 'Pacifico', cursive;
-
+    font-family: 'Pacifico', cursive;
 };
 
 body{
@@ -15,25 +14,30 @@ body{
 
 header{
     width:100%;
-    height:6.5em;
+    height: 20vh;
     background-color:#800080;
     display:flex;
     justify-content:space-between; 
     align-items:center;   
+    
 }
+
 .logo{
-    width:4em;
+    width:8%;
     margin-left:2em;
+    border-radius:20%;
 }
 
 nav{
     width: 40em;
+
 }
+
 ul{
     width:100%;
     display:flex;
     justify-content:space-evenly;
-    font-size:1.2rem;
+    font-size: 2rem;
     color:white;
     list-style: none ;
 }
@@ -42,30 +46,60 @@ li:hover{
     cursor:pointer;
 }
 
-main{
-    width:100%;
+
+.cards{
+    padding-top: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
 }
-.section-cards{
-    width:80%;
-    display:flex;
-    flex-wrap:wrap;
-    margin:0 auto;
+
+.informacoes{
+    padding-top: 2rem;
+    border-radius: 20px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: chartreuse;
 }
+p{
+    color: white;
+    font-size: 25px;
+}
+
 .card{
-    width:25%;
-    margin:2em;
-    overflow: hidden;
-    background-color: yellow;
+   width: 15vw;
+   height: 45vh;
+    background-color: rgb(167, 36, 167) ;
     border-radius:18px;
-
-
-}
-.card img{
-    width:100%;
-    transition: 1s all;
-}
-.card img:hover{
-    transform: scale(1.2);
 }
 
+@media (max-width:768px){
+    header{
+        width: 100%;
+        height: 40vh;
+        display: flex;
+        justify-content: space-evenly;    
+}
+    .logo{
+        width: 50%;
+    }
+    ul{
+    width: 80%;
+    display:flex;
+    justify-content:space-evenly;
+    font-size: 3rem;
+    }
+}
 
+@media (max-width:768px){
+    .informacoes{
+        display: flex;
+        width: 50%;
+          flex-wrap: wrap;
+}
+    
+}
