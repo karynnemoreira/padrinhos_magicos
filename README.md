@@ -1,4 +1,4 @@
-# Padrinhos Magico
+# Padrinhos Magicos
 
 > Status : Em Processo
 
